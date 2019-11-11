@@ -1,0 +1,8 @@
+.Card {
+  padding: 20px 40px;
+  -webkit-box-shadow: 10px 18px 20px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 18px 20px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 18px 20px -13px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  background-color: #30d131;
+}
