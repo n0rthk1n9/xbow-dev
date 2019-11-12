@@ -11,6 +11,10 @@ function App() {
         <span>Hello World</span>
         <Emoji symbol="🚀" label="rocket" />
       </Card>
+      <Card>
+        <span>automatic deployment working</span>
+        <Emoji symbol="😍" label="heart_eyed_face" />
+      </Card>
     </div>
   );
 }
