@@ -15,6 +15,9 @@ function App() {
         <span>automatic deployment working</span>
         <Emoji symbol="😍" label="heart_eyed_face" />
       </Card>
+      <Card>
+        <span>codesandbox.io rocks</span>
+      </Card>
     </div>
   );
 }
