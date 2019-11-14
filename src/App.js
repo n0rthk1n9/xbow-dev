@@ -18,6 +18,10 @@ function App() {
       <Card>
         <span>codesandbox.io rocks</span>
       </Card>
+      <Card>
+        <span>js development on iPad - what a time to be alive</span>
+        <Emoji symbol="🍔" label="burger" />
+      </Card>
     </div>
   );
 }
