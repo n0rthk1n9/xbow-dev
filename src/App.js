@@ -1,22 +1,18 @@
 import React from 'react';
+import { Route, Switch, withRouter, Redirect } from 'react-router-dom';
 
-import { Emoji } from './components/UI/Emoji/Emoji';
-import { Card } from './components/UI/Card/Card';
-import classes from './App.module.css';
+import { Home } from './pages/Home/Home';
+import { Privacy } from './pages/Privacy/Privacy';
 
 function App() {
   return (
-    <div className={classes.App}>
-      <Card>
-        <span>Hello World</span>
-        <Emoji symbol="🚀" label="rocket" />
-      </Card>
-      <Card>
-        <span>automatic deployment working</span>
-        <Emoji symbol="😍" label="heart_eyed_face" />
-      </Card>
-    </div>
+    <Switch>
+      <Route path="/cameleon-calculator" component={Home} />
+      <Route path="/privacy" component={Privacy} />
+      <Route path="/" exact component={Home} />
+      <Redirect to="/" />
+    </Switch>
   );
 }
 
-export default App;
+export default withRouter(App);
