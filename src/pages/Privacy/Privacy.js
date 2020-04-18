@@ -1,4 +1,5 @@
 import React from 'react';
+
 import classes from './Privacy.module.css';
 
 function Privacy() {
@@ -48,7 +49,11 @@ function Privacy() {
           </p>{' '}
           <ul>
             <li>
-              <a href="https://expo.io/privacy" target="_blank">
+              <a
+                href="https://expo.io/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Expo
               </a>
             </li>
