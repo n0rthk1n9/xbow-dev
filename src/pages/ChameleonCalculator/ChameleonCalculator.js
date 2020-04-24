@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { IPhoneX } from '../../components/UI/IPhoneX/IPhoneX';
 import classes from './ChameleonCalculator.module.css';
 
 function ChameleonCalculator() {
@@ -12,6 +13,7 @@ function ChameleonCalculator() {
           chameleon.calculator@gmail.com
         </a>
       </div>
+      <IPhoneX />
     </React.Fragment>
   );
 }
