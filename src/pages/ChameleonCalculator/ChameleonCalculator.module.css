@@ -1,5 +1,26 @@
-.ChameleonCalculator {
+.ChameleonCalculatorSupport {
+  padding: 10px;
+}
+
+.MobileStoreButtonWrapper {
   display: flex;
-  text-align: center;
-  padding: 20px;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.DownloadProblems {
+  margin-bottom: 80px;
+}
+
+.WhereToGetUpdates {
+  margin-bottom: 80px;
+}
+
+.Bugs {
+  margin-bottom: 80px;
+}
+
+.Features {
+  margin-bottom: 80px;
 }
