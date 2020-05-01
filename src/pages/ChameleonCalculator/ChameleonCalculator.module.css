@@ -1,5 +1,8 @@
 .ChameleonCalculatorSupport {
-  padding: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 50px;
 }
 
 .MobileStoreButtonWrapper {
@@ -7,6 +10,7 @@
   width: 100%;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .DownloadProblems {
@@ -23,4 +27,20 @@
 
 .Features {
   margin-bottom: 80px;
+}
+
+.LinkDark:link {
+  color: #2bd9fe;
+}
+
+.LinkDark:visited {
+  color: #49b6ff;
+}
+
+.LinkLight:link {
+  color: #0000c3;
+}
+
+.LinkLight:visited {
+  color: #4e177f;
 }

@@ -1,15 +1,30 @@
 import React from 'react';
 import MobileStoreButton from 'react-mobile-store-button';
+import { useModeSelector, Mode, useLightSwitch } from 'use-light-switch';
 
 import icon from '../../assets/icon.png';
 import classes from './ChameleonCalculator.module.css';
 
 function ChameleonCalculator() {
+  const selected = useModeSelector({
+    light: { color: '#000000', backgroundColor: '#FFFFFF' },
+    dark: { color: '#FFFFFF', backgroundColor: '#000000' },
+    unset: { color: '#000000', backgroundColor: '#FFFFFF' },
+  });
+
+  const mode = useLightSwitch();
+
   const iOSUrl =
     'https://apps.apple.com/de/app/chameleon-calculator/id1508721476?l=en';
   return (
     <React.Fragment>
-      <div className={classes.ChameleonCalculatorSupport}>
+      <div
+        className={classes.ChameleonCalculatorSupport}
+        style={{
+          color: selected.color,
+          backgroundColor: selected.backgroundColor,
+        }}
+      >
         <div className={classes.MobileStoreButtonWrapper}>
           <p>
             <strong>
@@ -17,18 +32,20 @@ function ChameleonCalculator() {
               App Store button underneath
             </strong>
           </p>
-          <div>
+          <div style={{ display: 'flex' }}>
             <img
-              width="100"
-              height="100"
+              width="50"
+              height="50"
               src={icon}
               alt="Chameleon Calculator Icon"
+              style={{ marginRight: '20px', borderRadius: '5px' }}
             ></img>
             <MobileStoreButton
               store="ios"
               url={iOSUrl}
               linkProps={{ title: 'Chameleon Calculator on iOS' }}
               width={150}
+              height={50}
             />
           </div>
         </div>
@@ -65,7 +82,12 @@ function ChameleonCalculator() {
             <li>Cancel the download and restart it.</li>
             <li>
               Check Apples{' '}
-              <a href="https://support.apple.com/en-us/HT207165">
+              <a
+                href="https://support.apple.com/en-us/HT207165"
+                className={
+                  mode === Mode.Dark ? classes.LinkDark : classes.LinkLight
+                }
+              >
                 advice on how to detect errors when downloading apps
               </a>
               .
@@ -76,7 +98,12 @@ function ChameleonCalculator() {
           </ul>
           <p>
             If this advice does not solve your problems, please contact me at:{' '}
-            <a href="mailto:chameleon.calculator@gmail.com">
+            <a
+              href="mailto:chameleon.calculator@gmail.com"
+              className={
+                mode === Mode.Dark ? classes.LinkDark : classes.LinkLight
+              }
+            >
               chameleon.calculator@gmail.com
             </a>
           </p>
@@ -110,7 +137,12 @@ function ChameleonCalculator() {
             </li>
             <li>
               If the error persists, please contact me at:{' '}
-              <a href="mailto:chameleon.calculator@gmail.com">
+              <a
+                href="mailto:chameleon.calculator@gmail.com"
+                className={
+                  mode === Mode.Dark ? classes.LinkDark : classes.LinkLight
+                }
+              >
                 chameleon.calculator@gmail.com
               </a>{' '}
               with a description what happened and what you think should happen.
@@ -123,7 +155,7 @@ function ChameleonCalculator() {
             What is the Chameleon Calculator App capable of doing in general?
           </strong>
           <ol>
-            <li>
+            <li style={{ marginBottom: '10px' }}>
               Do standard calculations with two operands using standard
               operations such as addition, substraction, multiplication,
               division, percentage and negation.
@@ -184,7 +216,12 @@ function ChameleonCalculator() {
           Thank you for using my app Chameleon Calculator. This means a lot to
           me. If you still have problems of any kind or you have suggestions on
           expanding it, don't hesitate to contact me at:{' '}
-          <a href="mailto:chameleon.calculator@gmail.com">
+          <a
+            href="mailto:chameleon.calculator@gmail.com"
+            className={
+              mode === Mode.Dark ? classes.LinkDark : classes.LinkLight
+            }
+          >
             chameleon.calculator@gmail.com
           </a>
         </div>

@@ -1,3 +1,22 @@
 .Privacy {
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+}
+
+.ExpoLinkDark:link {
+  color: #2bd9fe;
+}
+
+.ExpoLinkDark:visited {
+  color: #49b6ff;
+}
+
+.ExpoLinkLight:link {
+  color: #0000c3;
+}
+
+.ExpoLinkLight:visited {
+  color: #4e177f;
 }

@@ -1,11 +1,26 @@
 import React from 'react';
+import { useModeSelector, Mode, useLightSwitch } from 'use-light-switch';
 
 import classes from './Privacy.module.css';
 
 function Privacy() {
+  const selected = useModeSelector({
+    light: { color: '#000000', backgroundColor: '#FFFFFF' },
+    dark: { color: '#FFFFFF', backgroundColor: '#000000' },
+    unset: { color: '#000000', backgroundColor: '#FFFFFF' },
+  });
+
+  const mode = useLightSwitch();
+
   return (
     <React.Fragment>
-      <div className={classes.Privacy}>
+      <div
+        className={classes.Privacy}
+        style={{
+          color: selected.color,
+          backgroundColor: selected.backgroundColor,
+        }}
+      >
         <strong>Privacy Policy</strong>{' '}
         <p>
           Jan Armbrust built the Chameleon Calculator app as a Free app. This
@@ -50,6 +65,11 @@ function Privacy() {
           <ul>
             <li>
               <a
+                className={
+                  mode === Mode.Dark
+                    ? classes.ExpoLinkDark
+                    : classes.ExpoLinkLight
+                }
                 href="https://expo.io/privacy"
                 target="_blank"
                 rel="noopener noreferrer"
