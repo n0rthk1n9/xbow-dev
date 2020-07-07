@@ -14,7 +14,6 @@ function Home() {
       <Card>
         <span>automatic deployment working</span>
         <Emoji symbol="😍" label="heart_eyed_face" />
-        <p>Leon stinkt</p>
       </Card>
     </div>
   );
