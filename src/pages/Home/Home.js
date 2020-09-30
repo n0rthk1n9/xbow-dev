@@ -1,22 +1,26 @@
 import React from 'react';
+import styled from 'styled-components';
 
-import { Emoji } from '../../components/UI/Emoji/Emoji';
-import { Card } from '../../components/UI/Card/Card';
-import classes from './Home.module.css';
+import { tokens } from '../../layouts';
 
-function Home() {
+export function Home() {
   return (
-    <div className={classes.Home}>
-      <Card>
-        <span>Hello World</span>
-        <Emoji symbol="🚀" label="rocket" />
-      </Card>
-      <Card>
-        <span>automatic deployment working</span>
-        <Emoji symbol="😍" label="heart_eyed_face" />
-      </Card>
-    </div>
+    <HomePageWrapper>
+      <span>
+        I'm Jan from Hamburg, Germany, currently working as a Frontend Engineer
+        at XING, the biggest job related social network in the DACH region
+      </span>
+    </HomePageWrapper>
   );
 }
 
-export { Home };
+const HomePageWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+`;
