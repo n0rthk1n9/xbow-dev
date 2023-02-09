@@ -15,6 +15,7 @@ function Home() {
         <span>automatic deployment working</span>
         <Emoji symbol="😍" label="heart_eyed_face" />
       </Card>
+      <a rel="me" href="https://mastodon.social/@n0rthk1n9">Mastodon</a>
     </div>
   );
 }
