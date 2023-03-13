@@ -4,13 +4,17 @@ import { Route, Switch, withRouter, Redirect } from 'react-router-dom';
 import { Home } from './pages/Home/Home';
 import { Privacy } from './pages/Privacy/Privacy';
 import { ChameleonCalculator } from './pages/ChameleonCalculator/ChameleonCalculator';
-import { Streaks } from './pages/Streaks/Streaks'
+import { Streaks } from './pages/Streaks/Streaks';
+import { GameSheet } from './pages/GameSheet/GameSheet';
+import { GameSheetPrivacy } from './pages/GameSheet/GameSheetPrivacy';
 
 function App() {
   return (
     <Switch>
       <Route path="/chameleon-calculator" component={ChameleonCalculator} />
       <Route path="/streaks" component={Streaks} />
+      <Route path="/game-sheet/privacy" component={GameSheetPrivacy} />
+      <Route path="/game-sheet" component={GameSheet} />
       <Route path="/privacy" component={Privacy} />
       <Route path="/" exact component={Home} />
       <Redirect to="/" />
