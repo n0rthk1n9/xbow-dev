@@ -1,5 +1,5 @@
 import React from 'react';
-import { useModeSelector, Mode, useLightSwitch } from 'use-light-switch';
+import { useModeSelector } from 'use-light-switch';
 
 import classes from '../Privacy/Privacy.module.css';
 
@@ -9,8 +9,6 @@ function GameSheetPrivacy() {
     dark: { color: '#FFFFFF', backgroundColor: '#000000' },
     unset: { color: '#000000', backgroundColor: '#FFFFFF' },
   });
-
-  const mode = useLightSwitch();
 
   return (
     <React.Fragment>
