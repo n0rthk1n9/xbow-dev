@@ -2,7 +2,7 @@ import React from 'react';
 import MobileStoreButton from 'react-mobile-store-button';
 import { useModeSelector, Mode, useLightSwitch } from 'use-light-switch';
 
-import icon from '../../assets/icon.png';
+import chameleonCalculatorIcon from '../../assets/chameleoncalculatoricon.png';
 import classes from './ChameleonCalculator.module.css';
 
 function ChameleonCalculator() {
@@ -36,7 +36,7 @@ function ChameleonCalculator() {
             <img
               width="50"
               height="50"
-              src={icon}
+              src={chameleonCalculatorIcon}
               alt="Chameleon Calculator Icon"
               style={{ marginRight: '20px', borderRadius: '5px' }}
             ></img>
