@@ -15,7 +15,7 @@ function Streaks() {
   const mode = useLightSwitch();
 
   const iOSUrl =
-    'https://apps.apple.com/';
+    'https://apps.apple.com/de/app/streaks-track/id1610940278?l=en';
   return (
     <React.Fragment>
       <div
