@@ -81,7 +81,7 @@ function Home() {
         </div>
       </Card>
       <Card>
-        <a href="https://github.com/n0rthk1n9" target="_blank">
+        <a href="https://github.com/n0rthk1n9" target="_blank" rel="noreferrer">
           <img
             width="50"
             height="50"
@@ -90,7 +90,7 @@ function Home() {
             style={{ marginRight: '10px' }}
           />
         </a>
-        <a href="https://mastodon.social/@n0rthk1n9" target="_blank">
+        <a href="https://mastodon.social/@n0rthk1n9" target="_blank" rel="noreferrer">
           <img
             width="50"
             height="50"
