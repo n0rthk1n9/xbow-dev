@@ -15,7 +15,7 @@ function GameSheet() {
   const mode = useLightSwitch();
 
   const iOSUrl =
-    'https://apps.apple.com/';
+    'https://apps.apple.com/de/app/game-sheet/id6446234019?l=en';
   return (
     <React.Fragment>
       <div
