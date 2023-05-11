@@ -2,7 +2,7 @@ import React from 'react';
 import MobileStoreButton from 'react-mobile-store-button';
 import { useModeSelector, Mode, useLightSwitch } from 'use-light-switch';
 
-import icon from '../../assets/streaksicon.png';
+import icon from '../../assets/streaksicon.webp';
 import classes from './Streaks.module.css';
 
 function Streaks() {
@@ -28,8 +28,8 @@ function Streaks() {
         <div className={classes.MobileStoreButtonWrapper}>
           <p>
             <strong>
-              To download Streaks, just press the download at the
-              App Store button underneath
+              To download Streaks, just press the download at the App Store
+              button underneath
             </strong>
           </p>
           <div style={{ display: 'flex' }}>
@@ -51,13 +51,10 @@ function Streaks() {
         </div>
         <div className={classes.DownloadProblems}>
           <strong>
-            I tried to download the Streaks App onto my device but
-            it didn't work, what should I do?
+            I tried to download the Streaks App onto my device but it didn't
+            work, what should I do?
           </strong>
-          <p>
-            If you have problems downloading Streaks here are some
-            tips:
-          </p>
+          <p>If you have problems downloading Streaks here are some tips:</p>
           <ul>
             <li>Check how much storage you have left on your iPhone / iPad:</li>
             <ol>
@@ -91,9 +88,7 @@ function Streaks() {
               </a>
               .
             </li>
-            <li>
-              Restart your iPhone and try to download Streaks again
-            </li>
+            <li>Restart your iPhone and try to download Streaks again</li>
           </ul>
           <p>
             If this advice does not solve your problems, please contact me at:{' '}
@@ -114,8 +109,8 @@ function Streaks() {
           <ul>
             <li>
               Just open the <strong>App Store</strong> App on your iPhone and
-              search for "Streaks". If a new update is available it
-              will show an "Update" button on the App Store page of the app.
+              search for "Streaks". If a new update is available it will show an
+              "Update" button on the App Store page of the app.
             </li>
             <li>
               The other way is to simply just tap on the App Store button on top
@@ -126,8 +121,8 @@ function Streaks() {
         </div>
         <div className={classes.Bugs}>
           <strong>
-            There is something wrong with the Streaks App on my
-            phone, I think it has a bug, what should I do?
+            There is something wrong with the Streaks App on my phone, I think
+            it has a bug, what should I do?
           </strong>
           <ul>
             <li>
@@ -150,31 +145,31 @@ function Streaks() {
           </ul>
         </div>
         <div className={classes.Features}>
-          <strong>
-            What is the Streaks App capable of doing in general?
-          </strong>
+          <strong>What is the Streaks App capable of doing in general?</strong>
           <ol>
             <li>
-              Add Streaks you want to track to your Streaks list by tapping the + button in the top right corner.
+              Add Streaks you want to track to your Streaks list by tapping the
+              + button in the top right corner.
             </li>
             <li>
-              Your ongoing streaks are shown in a list sorted to 4 categories and showing the timespan since the streak is running.
+              Your ongoing streaks are shown in a list sorted to 4 categories
+              and showing the timespan since the streak is running.
+            </li>
+            <li>With swipe to delete you can delete Streaks from the list.</li>
+            <li>
+              Tapping a Streak in the list will show you the name icon and date
+              when the Streak started in a detail view.
             </li>
             <li>
-              With swipe to delete you can delete Streaks from the list.
-            </li>
-            <li>
-              Tapping a Streak in the list will show you the name icon and date when the Streak started in a detail view.
-            </li>
-            <li>
-              The list of Streaks is permanently saved to your device so that you can access it next time you use the app
+              The list of Streaks is permanently saved to your device so that
+              you can access it next time you use the app
             </li>
           </ol>
         </div>
         <div className={classes.Thanks}>
-          Thank you for using my app Streaks. This means a lot to
-          me. If you still have problems of any kind or you have suggestions on
-          expanding it, don't hesitate to contact me at:{' '}
+          Thank you for using my app Streaks. This means a lot to me. If you
+          still have problems of any kind or you have suggestions on expanding
+          it, don't hesitate to contact me at:{' '}
           <a
             href="mailto:streakstrackapp@gmail.com"
             className={

@@ -2,7 +2,7 @@ import React from 'react';
 import MobileStoreButton from 'react-mobile-store-button';
 import { useModeSelector, Mode, useLightSwitch } from 'use-light-switch';
 
-import icon from '../../assets/gamesheeticon.png';
+import icon from '../../assets/gamesheeticon.webp';
 import classes from './GameSheet.module.css';
 
 function GameSheet() {
@@ -14,8 +14,7 @@ function GameSheet() {
 
   const mode = useLightSwitch();
 
-  const iOSUrl =
-    'https://apps.apple.com/de/app/game-sheet/id6446234019?l=en';
+  const iOSUrl = 'https://apps.apple.com/de/app/game-sheet/id6446234019?l=en';
   return (
     <React.Fragment>
       <div
@@ -28,8 +27,8 @@ function GameSheet() {
         <div className={classes.MobileStoreButtonWrapper}>
           <p>
             <strong>
-              To download Game Sheet, just press the download at the
-              App Store button underneath
+              To download Game Sheet, just press the download at the App Store
+              button underneath
             </strong>
           </p>
           <div style={{ display: 'flex' }}>
@@ -51,13 +50,10 @@ function GameSheet() {
         </div>
         <div className={classes.DownloadProblems}>
           <strong>
-            I tried to download the Game Sheet App onto my device but
-            it didn't work, what should I do?
+            I tried to download the Game Sheet App onto my device but it didn't
+            work, what should I do?
           </strong>
-          <p>
-            If you have problems downloading Game Sheet here are some
-            tips:
-          </p>
+          <p>If you have problems downloading Game Sheet here are some tips:</p>
           <ul>
             <li>Check how much storage you have left on your iPhone / iPad:</li>
             <ol>
@@ -76,7 +72,8 @@ function GameSheet() {
           <ul>
             <li>
               Check your internet connection. To get the best experience, try to
-              connect to a Wifi Network and start the download of Game Sheet again.
+              connect to a Wifi Network and start the download of Game Sheet
+              again.
             </li>
             <li>Cancel the download and restart it.</li>
             <li>
@@ -91,9 +88,7 @@ function GameSheet() {
               </a>
               .
             </li>
-            <li>
-              Restart your iPhone and try to download Game Sheet again
-            </li>
+            <li>Restart your iPhone and try to download Game Sheet again</li>
           </ul>
           <p>
             If this advice does not solve your problems, please contact me at:{' '}
@@ -114,8 +109,8 @@ function GameSheet() {
           <ul>
             <li>
               Just open the <strong>App Store</strong> App on your iPhone and
-              search for "Game Sheet". If a new update is available it
-              will show an "Update" button on the App Store page of the app.
+              search for "Game Sheet". If a new update is available it will show
+              an "Update" button on the App Store page of the app.
             </li>
             <li>
               The other way is to simply just tap on the App Store button on top
@@ -126,8 +121,8 @@ function GameSheet() {
         </div>
         <div className={classes.Bugs}>
           <strong>
-            There is something wrong with the Game Sheet App on my
-            phone, I think it has a bug, what should I do?
+            There is something wrong with the Game Sheet App on my phone, I
+            think it has a bug, what should I do?
           </strong>
           <ul>
             <li>
@@ -155,29 +150,36 @@ function GameSheet() {
           </strong>
           <ol>
             <li>
-                Game Sheet is an app for tracking the scores of your favorite dice game involving rolling six dice to achieve specific combinations.
+              Game Sheet is an app for tracking the scores of your favorite dice
+              game involving rolling six dice to achieve specific combinations.
             </li>
             <li>
-              Add a new player to track it's points by tapping the "+" button in the top right corner.
+              Add a new player to track it's points by tapping the "+" button in
+              the top right corner.
             </li>
             <li>
-              Edit the points of a player by tapping on the player item in the list of the main screen.
+              Edit the points of a player by tapping on the player item in the
+              list of the main screen.
             </li>
             <li>
-              In the resulting detail screen of the respective player you can now choose to change whatever kinds of points you like.
+              In the resulting detail screen of the respective player you can
+              now choose to change whatever kinds of points you like.
             </li>
             <li>
-              Totals and all individual points get get calculated, saved and synced via iCloud to all of your devices the app is installed on automatically.   
+              Totals and all individual points get get calculated, saved and
+              synced via iCloud to all of your devices the app is installed on
+              automatically.
             </li>
             <li>
-              To delete a player just swipe to delete on the respective player in the players list.
+              To delete a player just swipe to delete on the respective player
+              in the players list.
             </li>
           </ol>
         </div>
         <div className={classes.Thanks}>
-          Thank you for using my app Game Sheet. This means a lot to
-          me. If you still have problems of any kind or you have suggestions on
-          expanding it, don't hesitate to contact me at:{' '}
+          Thank you for using my app Game Sheet. This means a lot to me. If you
+          still have problems of any kind or you have suggestions on expanding
+          it, don't hesitate to contact me at:{' '}
           <a
             href="mailto:rabble-oceans05@icloud.com"
             className={
