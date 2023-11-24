@@ -4,12 +4,13 @@ import { useModeSelector, Mode, useLightSwitch } from 'use-light-switch';
 
 import icon from '../../assets/streaksicon.webp';
 import classes from './Streaks.module.css';
+import { AppStoreButton } from 'react-mobile-app-button';
 
 function Streaks() {
   const selected = useModeSelector({
-    light: { color: '#000000', backgroundColor: '#FFFFFF' },
-    dark: { color: '#FFFFFF', backgroundColor: '#000000' },
-    unset: { color: '#000000', backgroundColor: '#FFFFFF' },
+    light: { color: '#000000', backgroundColor: '#FFFFFF', storeButtonTheme: 'light' },
+    dark: { color: '#FFFFFF', backgroundColor: '#000000', storeButtonTheme: 'dark' },
+    unset: { color: '#000000', backgroundColor: '#FFFFFF', storeButtonTheme: 'light' },
   });
 
   const mode = useLightSwitch();
@@ -40,12 +41,10 @@ function Streaks() {
               alt="Streaks Icon"
               style={{ marginRight: '20px', borderRadius: '5px' }}
             ></img>
-            <MobileStoreButton
-              store="ios"
+            <AppStoreButton
               url={iOSUrl}
+              theme={selected.storeButtonTheme}
               linkProps={{ title: 'Streaks on iOS' }}
-              width={150}
-              height={50}
             />
           </div>
         </div>
