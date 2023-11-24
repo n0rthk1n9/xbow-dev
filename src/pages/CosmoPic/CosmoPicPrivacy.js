@@ -19,7 +19,7 @@ function CosmoPicPrivacy() {
           backgroundColor: selected.backgroundColor,
         }}
       >
-        <h1>Game Sheet app Privacy Policy</h1>{' '}
+        <h1>Cosmo Pic app Privacy Policy</h1>{' '}
         <p>
             Jan Armbrust built the Cosmo Pic app as
             a Free app. This SERVICE is provided by
