@@ -1,11 +1,11 @@
 import React from 'react';
 import { useModeSelector, Mode, useLightSwitch } from 'use-light-switch';
 
-import icon from '../../assets/streaksicon.webp';
-import classes from './Streaks.module.css';
+import icon from '../../assets/cosmopic.webp';
+import classes from './CosmoPic.module.css';
 import { AppStoreButton } from 'react-mobile-app-button';
 
-function Streaks() {
+function CosmoPic() {
   const selected = useModeSelector({
     light: { color: '#000000', backgroundColor: '#FFFFFF', storeButtonTheme: 'light' },
     dark: { color: '#FFFFFF', backgroundColor: '#000000', storeButtonTheme: 'dark' },
@@ -14,12 +14,11 @@ function Streaks() {
 
   const mode = useLightSwitch();
 
-  const iOSUrl =
-    'https://apps.apple.com/de/app/streaks-track/id1610940278?l=en';
+  const iOSUrl = 'https://apps.apple.com/';
   return (
     <React.Fragment>
       <div
-        className={classes.StreaksSupport}
+        className={classes.CosmoPicSupport}
         style={{
           color: selected.color,
           backgroundColor: selected.backgroundColor,
@@ -28,7 +27,7 @@ function Streaks() {
         <div className={classes.MobileStoreButtonWrapper}>
           <p>
             <strong>
-              To download Streaks, just press the download at the App Store
+              To download Cosmo Pic, just press the download at the App Store
               button underneath
             </strong>
           </p>
@@ -37,22 +36,22 @@ function Streaks() {
               width="50"
               height="50"
               src={icon}
-              alt="Streaks Icon"
+              alt="Cosmo Pic Icon"
               style={{ marginRight: '20px', borderRadius: '5px' }}
             ></img>
             <AppStoreButton
               url={iOSUrl}
               theme={selected.storeButtonTheme}
-              linkProps={{ title: 'Streaks on iOS' }}
+              linkProps={{ title: 'Cosmo Pic on iOS' }}
             />
           </div>
         </div>
         <div className={classes.DownloadProblems}>
           <strong>
-            I tried to download the Streaks App onto my device but it didn't
+            I tried to download the Cosmo Pic App onto my device but it didn't
             work, what should I do?
           </strong>
-          <p>If you have problems downloading Streaks here are some tips:</p>
+          <p>If you have problems downloading Cosmo Pic here are some tips:</p>
           <ul>
             <li>Check how much storage you have left on your iPhone / iPad:</li>
             <ol>
@@ -66,12 +65,13 @@ function Streaks() {
           <p>
             If there is less than 100 MB of space available you can try deleting
             other apps to free up some space. After that just try to download
-            Streaks again.
+            Cosmo Pic again.
           </p>
           <ul>
             <li>
               Check your internet connection. To get the best experience, try to
-              connect to a Wifi Network and start the download of Streaks again.
+              connect to a Wifi Network and start the download of Cosmo Pic
+              again.
             </li>
             <li>Cancel the download and restart it.</li>
             <li>
@@ -86,41 +86,41 @@ function Streaks() {
               </a>
               .
             </li>
-            <li>Restart your iPhone and try to download Streaks again</li>
+            <li>Restart your iPhone and try to download Cosmo Pic again</li>
           </ul>
           <p>
             If this advice does not solve your problems, please contact me at:{' '}
             <a
-              href="mailto:streakstrackapp@gmail.com"
+              href="mailto:cosmopic@xbow.dev"
               className={
                 mode === Mode.Dark ? classes.LinkDark : classes.LinkLight
               }
             >
-              streakstrackapp@gmail.com
+              cosmopic@xbow.dev
             </a>
           </p>
         </div>
         <div className={classes.WhereToGetUpdates}>
           <strong>
-            Where do I find the newest version of the Streaks App?
+            Where do I find the newest version of the Cosmo Pic App?
           </strong>
           <ul>
             <li>
               Just open the <strong>App Store</strong> App on your iPhone and
-              search for "Streaks". If a new update is available it will show an
-              "Update" button on the App Store page of the app.
+              search for "Cosmo Pic". If a new update is available it will show
+              an "Update" button on the App Store page of the app.
             </li>
             <li>
               The other way is to simply just tap on the App Store button on top
               of this support page to directly open the App Store page of the
-              Streaks App
+              Cosmo Pic App
             </li>
           </ul>
         </div>
         <div className={classes.Bugs}>
           <strong>
-            There is something wrong with the Streaks App on my phone, I think
-            it has a bug, what should I do?
+            There is something wrong with the Cosmo Pic App on my phone, I
+            think it has a bug, what should I do?
           </strong>
           <ul>
             <li>
@@ -130,12 +130,12 @@ function Streaks() {
             <li>
               If the error persists, please contact me at:{' '}
               <a
-                href="mailto:streakstrackapp@gmail.com"
+                href="mailto:cosmopic@xbow.dev"
                 className={
                   mode === Mode.Dark ? classes.LinkDark : classes.LinkLight
                 }
               >
-                streakstrackapp@gmail.com
+                cosmopic@xbow.dev
               </a>{' '}
               with a description what happened and what you think should happen.
               Thanks in advance for your help!
@@ -143,38 +143,32 @@ function Streaks() {
           </ul>
         </div>
         <div className={classes.Features}>
-          <strong>What is the Streaks App capable of doing in general?</strong>
+          <strong>
+            What is the Cosmo Pic App capable of doing in general?
+          </strong>
           <ol>
             <li>
-              Add Streaks you want to track to your Streaks list by tapping the
-              + button in the top right corner.
+              You can look at the Astronomy Picture of the day by NASA.
             </li>
             <li>
-              Your ongoing streaks are shown in a list sorted to 4 categories
-              and showing the timespan since the streak is running.
-            </li>
-            <li>With swipe to delete you can delete Streaks from the list.</li>
-            <li>
-              Tapping a Streak in the list will show you the name icon and date
-              when the Streak started in a detail view.
+              You can save a picture as a favorite to look at it again later.
             </li>
             <li>
-              The list of Streaks is permanently saved to your device so that
-              you can access it next time you use the app
+              You can look at the former Astronomy Pictures of the day until provided by NASA.
             </li>
           </ol>
         </div>
         <div className={classes.Thanks}>
-          Thank you for using my app Streaks. This means a lot to me. If you
+          Thank you for using my app Cosmo Pic. This means a lot to me. If you
           still have problems of any kind or you have suggestions on expanding
           it, don't hesitate to contact me at:{' '}
           <a
-            href="mailto:streakstrackapp@gmail.com"
+            href="mailto:cosmopic@xbow.dev"
             className={
               mode === Mode.Dark ? classes.LinkDark : classes.LinkLight
             }
           >
-            streakstrackapp@gmail.com
+            cosmopic@xbow.dev
           </a>
         </div>
       </div>
@@ -182,4 +176,4 @@ function Streaks() {
   );
 }
 
-export { Streaks };
+export { CosmoPic };

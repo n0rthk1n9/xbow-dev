@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
-import MobileStoreButton from 'react-mobile-store-button';
+import {  AppStoreButton } from "react-mobile-app-button";
 
 import { Emoji } from '../../components/UI/Emoji/Emoji';
 import { Card } from '../../components/UI/Card/Card';
 
+import cosmoPicIcon from '../../assets/cosmopic.webp';
 import gameSheetIcon from '../../assets/gamesheeticon.webp';
 import streaksIcon from '../../assets/streaksicon.webp';
 import chameleonCalculatorIcon from '../../assets/chameleoncalculatoricon.webp';
@@ -13,6 +14,11 @@ import mastodonIcon from '../../assets/mastodon.webp';
 import classes from './Home.module.css';
 
 const apps = [
+  {
+    name: 'Cosmo Pic',
+    icon: cosmoPicIcon,
+    url: 'https://apps.apple.com/',
+  },
   {
     name: 'Game Sheet',
     icon: gameSheetIcon,
@@ -60,12 +66,10 @@ function Home() {
               alt={`${app.name} Icon`}
               loading="lazy"
             />
-            <MobileStoreButton
-              store="ios"
+            <AppStoreButton
               url={app.url}
+              theme={"dark"}
               linkProps={{ title: `${app.name} on iOS` }}
-              width={150}
-              height={50}
             />
           </div>
         ))}

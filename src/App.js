@@ -7,6 +7,8 @@ import { ChameleonCalculator } from './pages/ChameleonCalculator/ChameleonCalcul
 import { Streaks } from './pages/Streaks/Streaks';
 import { GameSheet } from './pages/GameSheet/GameSheet';
 import { GameSheetPrivacy } from './pages/GameSheet/GameSheetPrivacy';
+import { CosmoPic } from './pages/CosmoPic/CosmoPic';
+import { CosmoPicPrivacy } from './pages/CosmoPic/CosmoPicPrivacy';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Route path="streaks" element={<Streaks />} />
       <Route path="game-sheet/privacy" element={<GameSheetPrivacy />} />
       <Route path="game-sheet" element={<GameSheet />} />
+      <Route path="cosmo-pic/privacy" element={<CosmoPicPrivacy />} />
+      <Route path="cosmo-pic" element={<CosmoPic />} />
       <Route path="privacy" element={<Privacy />} />
       <Route path="/" element={<Home />} />
       <Route path="*" element={<Navigate to="/" />} />
