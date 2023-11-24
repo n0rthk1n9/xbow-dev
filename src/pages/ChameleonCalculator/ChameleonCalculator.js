@@ -1,15 +1,15 @@
 import React from 'react';
-import MobileStoreButton from 'react-mobile-store-button';
 import { useModeSelector, Mode, useLightSwitch } from 'use-light-switch';
 
 import chameleonCalculatorIcon from '../../assets/chameleoncalculatoricon.webp';
 import classes from './ChameleonCalculator.module.css';
+import { AppStoreButton } from 'react-mobile-app-button';
 
 function ChameleonCalculator() {
   const selected = useModeSelector({
-    light: { color: '#000000', backgroundColor: '#FFFFFF' },
-    dark: { color: '#FFFFFF', backgroundColor: '#000000' },
-    unset: { color: '#000000', backgroundColor: '#FFFFFF' },
+    light: { color: '#000000', backgroundColor: '#FFFFFF', storeButtonTheme: 'light'  },
+    dark: { color: '#FFFFFF', backgroundColor: '#000000', storeButtonTheme: 'dark'  },
+    unset: { color: '#000000', backgroundColor: '#FFFFFF', storeButtonTheme: 'light'  },
   });
 
   const mode = useLightSwitch();
@@ -40,12 +40,10 @@ function ChameleonCalculator() {
               alt="Chameleon Calculator Icon"
               style={{ marginRight: '20px', borderRadius: '5px' }}
             ></img>
-            <MobileStoreButton
-              store="ios"
+            <AppStoreButton
               url={iOSUrl}
+              theme={selected.storeButtonTheme}
               linkProps={{ title: 'Chameleon Calculator on iOS' }}
-              width={150}
-              height={50}
             />
           </div>
         </div>
