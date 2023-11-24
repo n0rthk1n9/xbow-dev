@@ -1,5 +1,4 @@
 import React from 'react';
-import MobileStoreButton from 'react-mobile-store-button';
 import { useModeSelector, Mode, useLightSwitch } from 'use-light-switch';
 
 import icon from '../../assets/streaksicon.webp';
