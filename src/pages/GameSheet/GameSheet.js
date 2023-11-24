@@ -1,15 +1,15 @@
 import React from 'react';
-import MobileStoreButton from 'react-mobile-store-button';
 import { useModeSelector, Mode, useLightSwitch } from 'use-light-switch';
 
 import icon from '../../assets/gamesheeticon.webp';
 import classes from './GameSheet.module.css';
+import { AppStoreButton } from 'react-mobile-app-button';
 
 function GameSheet() {
   const selected = useModeSelector({
-    light: { color: '#000000', backgroundColor: '#FFFFFF' },
-    dark: { color: '#FFFFFF', backgroundColor: '#000000' },
-    unset: { color: '#000000', backgroundColor: '#FFFFFF' },
+    light: { color: '#000000', backgroundColor: '#FFFFFF', storeButtonTheme: 'light' },
+    dark: { color: '#FFFFFF', backgroundColor: '#000000', storeButtonTheme: 'dark' },
+    unset: { color: '#000000', backgroundColor: '#FFFFFF', storeButtonTheme: 'light' },
   });
 
   const mode = useLightSwitch();
@@ -39,12 +39,10 @@ function GameSheet() {
               alt="Game Sheet Icon"
               style={{ marginRight: '20px', borderRadius: '5px' }}
             ></img>
-            <MobileStoreButton
-              store="ios"
+            <AppStoreButton
               url={iOSUrl}
+              theme={selected.storeButtonTheme}
               linkProps={{ title: 'Game Sheet on iOS' }}
-              width={150}
-              height={50}
             />
           </div>
         </div>
