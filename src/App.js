@@ -9,6 +9,8 @@ import { GameSheet } from './pages/GameSheet/GameSheet';
 import { GameSheetPrivacy } from './pages/GameSheet/GameSheetPrivacy';
 import { CosmoPic } from './pages/CosmoPic/CosmoPic';
 import { CosmoPicPrivacy } from './pages/CosmoPic/CosmoPicPrivacy';
+import { AppExhibit } from './pages/AppExhibit/AppExhibit';
+import { AppExhibitPrivacy } from './pages/AppExhibit/AppExhibitPrivacy';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Route path="game-sheet" element={<GameSheet />} />
       <Route path="cosmo-pic/privacy" element={<CosmoPicPrivacy />} />
       <Route path="cosmo-pic" element={<CosmoPic />} />
+      <Route path="app-exhibit/privacy" element={<AppExhibitPrivacy />} />
+      <Route path="app-exhibit" element={<AppExhibit />} />
       <Route path="privacy" element={<Privacy />} />
       <Route path="/" element={<Home />} />
       <Route path="*" element={<Navigate to="/" />} />
