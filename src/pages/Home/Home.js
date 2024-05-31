@@ -4,6 +4,7 @@ import {  AppStoreButton } from "react-mobile-app-button";
 import { Emoji } from '../../components/UI/Emoji/Emoji';
 import { Card } from '../../components/UI/Card/Card';
 
+import appExhibitIcon from '../../assets/appexhibit.webp';
 import cosmoPicIcon from '../../assets/cosmopic.webp';
 import gameSheetIcon from '../../assets/gamesheeticon.webp';
 import streaksIcon from '../../assets/streaksicon.webp';
@@ -15,9 +16,14 @@ import classes from './Home.module.css';
 
 const apps = [
   {
+    name: 'App Exhibit',
+    icon: appExhibitIcon,
+    url: 'https://apps.apple.com/',
+  },
+  {
     name: 'Cosmo Pic',
     icon: cosmoPicIcon,
-    url: 'https://apps.apple.com/',
+    url: 'https://apps.apple.com/de/app/cosmo-pic/id6472663048',
   },
   {
     name: 'Game Sheet',
