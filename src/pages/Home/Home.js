@@ -18,7 +18,7 @@ const apps = [
   {
     name: 'App Exhibit',
     icon: appExhibitIcon,
-    url: 'https://apps.apple.com/',
+    url: 'https://apps.apple.com/de/app/app-exhibit-your-app-showcase/id6503256642',
   },
   {
     name: 'Cosmo Pic',
