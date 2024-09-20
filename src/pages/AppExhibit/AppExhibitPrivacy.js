@@ -27,11 +27,11 @@ function AppExhibitPrivacy() {
         </p>
         <p><strong>Information Collection and Use</strong></p>
         <p>
-          I do not collect any information with this app. Apple collects crash logs and analytics not linked to you as a person but I don't sell or give them to third parties.
+          I don't store any user-identifiable data anywhere outside your device.
         </p>
         <div>
           <p>
-            The app does use a third-party API that may collect
+            The app does use third-party APIs that may collect
             information used to identify you.
           </p>
           <p>
@@ -42,6 +42,9 @@ function AppExhibitPrivacy() {
             <li>
               <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener noreferrer">iTunes API</a>
             </li>
+            <li>
+              <a href="https://freemiumkit.app/" target="_blank" rel="noopener noreferrer">FreemiumKit</a>
+            </li>
             </ul>
           </div>
           <p>
@@ -51,7 +54,7 @@ function AppExhibitPrivacy() {
             notify you of any changes by posting the new Privacy Policy on
             this page.
           </p>
-          <p>This policy is effective as of 2024-05-31</p>
+          <p>This policy is effective as of 2024-09-20</p>
           <p><strong>Contact Me</strong></p>
           <p>
             If you have any questions or suggestions about my
