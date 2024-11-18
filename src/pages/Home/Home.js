@@ -103,6 +103,7 @@ function Home() {
             rel="noreferrer"
           >
             <img
+              className={classes.Github}
               width="50"
               height="50"
               src={mastodonIcon}
