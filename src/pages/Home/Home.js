@@ -11,6 +11,7 @@ import streaksIcon from '../../assets/streaksicon.webp';
 import chameleonCalculatorIcon from '../../assets/chameleoncalculatoricon.webp';
 import githubIcon from '../../assets/github.webp';
 import mastodonIcon from '../../assets/mastodon.webp';
+import blueskyIcon from '../../assets/bluesky.webp';
 
 import classes from './Home.module.css';
 
@@ -108,6 +109,19 @@ function Home() {
               alt="Mastodon Icon"
               loading="lazy"
             />
+            <a
+            href="https://bsky.app/profile/n0rthk1n9.bsky.social"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              width="50"
+              height="50"
+              src={blueskyIcon}
+              alt="Bluesky Icon"
+              loading="lazy"
+            />
+          </a>
           </a>
         </div>
       </Card>
