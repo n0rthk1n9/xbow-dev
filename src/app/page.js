@@ -1,9 +1,7 @@
-'use client';
-
 import React from 'react';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { AppCard } from '../components/AppCard';
+import { MotionWrapper } from '../components/MotionWrapper';
 
 const apps = [
   {
@@ -37,12 +35,7 @@ export default function Home() {
   return (
     <main className="container mx-auto min-h-screen px-4 py-8 md:px-8 lg:px-16">
       <div className="mx-auto max-w-3xl space-y-6">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="card"
-        >
+        <MotionWrapper className="card">
           <div className="space-y-4">
             <h2 className="text-2xl font-bold text-text-light dark:text-text-dark">
               Hi, my name is Jan 👋
@@ -51,7 +44,7 @@ export default function Home() {
               📍 Hamburg ⚓️, Germany 🇩🇪
             </h3>
           </div>
-        </motion.div>
+        </MotionWrapper>
 
         <div className="flex flex-col space-y-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -60,12 +53,7 @@ export default function Home() {
             ))}
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="card"
-          >
+          <MotionWrapper className="card" transition={{ delay: 0.1 }}>
             <div className="space-y-4">
               <h2 className="text-xl font-semibold text-text-light dark:text-text-dark">
                 About Me
@@ -88,15 +76,10 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </motion.div>
+          </MotionWrapper>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="card"
-        >
+        <MotionWrapper className="card" transition={{ delay: 0.4 }}>
           <div className="flex items-center justify-center gap-4">
             <a
               href="https://github.com/n0rthk1n9"
@@ -156,7 +139,7 @@ export default function Home() {
               />
             </a>
           </div>
-        </motion.div>
+        </MotionWrapper>
       </div>
     </main>
   );
