@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { AppStoreButton } from '../../components/AppStoreButton';
 import Link from 'next/link';
 
-const iOSUrl = 'https://apps.apple.com/de/app/streaks/id6503256642';
+const iOSUrl = 'https://apps.apple.com/de/app/streaks-track/id1610940278?l=en';
 
 export default function Streaks() {
   return (

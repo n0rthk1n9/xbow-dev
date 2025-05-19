@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { AppStoreButton } from '../../components/AppStoreButton';
 import Link from 'next/link';
 
-const iOSUrl = 'https://apps.apple.com/de/app/chameleon-calculator/id6503256642';
+const iOSUrl = 'https://apps.apple.com/de/app/chameleon-calculator/id1508721476?l=en';
 
 export default function ChameleonCalculator() {
   return (
@@ -21,7 +21,7 @@ export default function ChameleonCalculator() {
           <div className="space-y-6">
             <div className="flex items-center justify-between">
               <Image
-                src="/assets/chameleoncalculator.webp"
+                src="/assets/chameleoncalculatoricon.webp"
                 alt="Chameleon Calculator Icon"
                 width={50}
                 height={50}

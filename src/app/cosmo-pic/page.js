@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { AppStoreButton } from '../../components/AppStoreButton';
 import Link from 'next/link';
 
-const iOSUrl = 'https://apps.apple.com/de/app/cosmo-pic/id6503256642';
+const iOSUrl = 'https://apps.apple.com/de/app/cosmo-pic/id6472663048';
 
 export default function CosmoPic() {
   return (

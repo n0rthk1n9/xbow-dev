@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { AppStoreButton } from '../../components/AppStoreButton';
 import Link from 'next/link';
 
-const iOSUrl = 'https://apps.apple.com/de/app/game-sheet/id6503256642';
+const iOSUrl = 'https://apps.apple.com/de/app/game-sheet/id6446234019';
 
 export default function GameSheet() {
   return (
@@ -21,7 +21,7 @@ export default function GameSheet() {
           <div className="space-y-6">
             <div className="flex items-center justify-between">
               <Image
-                src="/assets/gamesheet.webp"
+                src="/assets/gamesheeticon.webp"
                 alt="Game Sheet Icon"
                 width={50}
                 height={50}
