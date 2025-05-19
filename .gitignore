@@ -30,3 +30,17 @@ yarn-error.log*
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Yarn 2+ (Berry)
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Node
+node_modules
+
+# Other common ignores
+.env
+.next
+out
