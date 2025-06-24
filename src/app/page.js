@@ -37,12 +37,42 @@ export default function Home() {
       <div className="mx-auto max-w-3xl space-y-6">
         <MotionWrapper className="card">
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-text-light dark:text-text-dark">
-              Hi, my name is Jan 👋
-            </h2>
-            <h3 className="text-xl text-text-secondary-light dark:text-text-secondary-dark">
-              📍 Hamburg ⚓️, Germany 🇩🇪
-            </h3>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+              <div>
+                <h2 className="text-2xl font-bold text-text-light dark:text-text-dark">
+                  Hi, my name is Jan 👋
+                </h2>
+                <h3 className="text-xl text-text-secondary-light dark:text-text-secondary-dark">
+                  📍 Hamburg ⚓️, Germany 🇩🇪
+                </h3>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="relative group">
+                  <div className="w-16 h-20 bg-gray-100 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm overflow-hidden">
+                    <iframe
+                      src="/assets/CV_Jan_Armbrust_iOS_Engineer_English.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+                      className="w-full h-full"
+                      title="CV Preview"
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 rounded-lg transition-all duration-200 flex items-center justify-center">
+                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="/assets/CV_Jan_Armbrust_iOS_Engineer_English.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm text-text-secondary-light dark:text-text-secondary-dark hover:text-text-light dark:hover:text-text-dark transition-colors duration-200 underline decoration-dotted underline-offset-4"
+                >
+                  Download CV
+                </a>
+              </div>
+            </div>
           </div>
         </MotionWrapper>
 
