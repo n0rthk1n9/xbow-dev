@@ -1,4 +1,6 @@
-import React from 'react';
+"use client";
+
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { AppCard } from '../components/AppCard';
 import { MotionWrapper } from '../components/MotionWrapper';
@@ -32,12 +34,14 @@ const apps = [
 ];
 
 export default function Home() {
+  const [pdfLoaded, setPdfLoaded] = useState(false);
+
   return (
     <main className="container mx-auto min-h-screen px-4 py-8 md:px-8 lg:px-16">
       <div className="mx-auto max-w-3xl space-y-6">
         <MotionWrapper className="card">
           <div className="space-y-4">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div className="flex flex-row items-center justify-between gap-4">
               <div>
                 <h2 className="text-2xl font-bold text-text-light dark:text-text-dark">
                   Hi, my name is Jan 👋
@@ -47,13 +51,17 @@ export default function Home() {
                 </h3>
               </div>
               <div className="flex items-center gap-3">
-                <div className="relative group">
-                  <div className="w-16 h-20 bg-gray-100 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm overflow-hidden">
-                    <iframe
-                      src="/assets/CV_Jan_Armbrust_iOS_Engineer_English.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
-                      className="w-full h-full"
-                      title="CV Preview"
-                    />
+                <a
+                  href="/assets/CV_Jan_Armbrust_iOS_Engineer_English.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group relative"
+                >
+                  <div className="w-16 h-20 bg-gray-100 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm flex items-center justify-center hover:shadow-md transition-shadow duration-200 p-10">
+                    <div className="text-center">
+                      <div className="text-2xl mb-1">📄</div>
+                      <div className="text-xs text-gray-600 dark:text-gray-400 font-medium leading-tight">Download CV</div>
+                    </div>
                   </div>
                   <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 rounded-lg transition-all duration-200 flex items-center justify-center">
                     <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -62,14 +70,6 @@ export default function Home() {
                       </svg>
                     </div>
                   </div>
-                </div>
-                <a
-                  href="/assets/CV_Jan_Armbrust_iOS_Engineer_English.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-sm text-text-secondary-light dark:text-text-secondary-dark hover:text-text-light dark:hover:text-text-dark transition-colors duration-200 underline decoration-dotted underline-offset-4"
-                >
-                  Download CV
                 </a>
               </div>
             </div>
