@@ -2963,6 +2963,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"glob@npm:^10.5.0":
+  version: 10.5.0
+  resolution: "glob@npm:10.5.0"
+  dependencies:
+    foreground-child: "npm:^3.1.0"
+    jackspeak: "npm:^3.1.2"
+    minimatch: "npm:^9.0.4"
+    minipass: "npm:^7.1.2"
+    package-json-from-dist: "npm:^1.0.0"
+    path-scurry: "npm:^1.11.1"
+  bin:
+    glob: dist/esm/bin.mjs
+  checksum: 10/ab3bccfefcc0afaedbd1f480cd0c4a2c0e322eb3f0aa7ceaa31b3f00b825069f17cf0f1fc8b6f256795074b903f37c0ade37ddda6a176aa57f1c2bbfe7240653
+  languageName: node
+  linkType: hard
+
 "glob@npm:^7.1.3":
   version: 7.2.3
   resolution: "glob@npm:7.2.3"
@@ -6562,7 +6578,7 @@ __metadata:
     eslint: "npm:^8"
     eslint-config-next: "npm:14.1.3"
     framer-motion: "npm:^11.0.8"
-    glob: "npm:^10.3.10"
+    glob: "npm:^10.5.0"
     next: "npm:^15.4.2"
     node-gyp: "npm:^10.0.1"
     postcss: "npm:^8"
