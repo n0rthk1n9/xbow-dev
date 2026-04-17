@@ -45,6 +45,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+        <link rel="me" href="https://sifa.id/p/n0rthk1n9.eurosky.social" />
       </head>
       <body className={inter.className}>
         <div className="min-h-screen bg-background-light dark:bg-background-dark">
